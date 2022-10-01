@@ -1,22 +1,10 @@
 
-
-Curso:
-https://www.youtube.com/watch?v=2Ayfi7OJhBI
-
-Posição: 12:26
-
-
 # Projeto  React App com .NET7 API-Backend usando VSCode (Entity Framework Core & SQL-Server)
 
-Curso video: https://www.youtube.com/watch?v=2Ayfi7OJhBI
-posição: 04:51
 
 ## Comando para criar o projeto
 
 dotnet new react -o api-react-netcore-vscode --auth Individual
-
-dotnet new react -o netcore-api-react-vscode --auth Individual
-
 
 ## Comando para criar arquivo readme.md
 echo> readme.md
@@ -28,14 +16,11 @@ Foi intalado o npm e o yarn !!!!
 
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
-
 dotnet build
 dotnet run
 
 
-
-
-Instalar o Entity Framework Core:
+    Instalar o Entity Framework Core:
 
     dotnet add package Microsoft.EntityFrameworkCore.SqlServer
     dotnet add package Microsoft.EntityFrameworkCore.Design
@@ -54,16 +39,7 @@ Instalar o Entity Framework Core:
     dotnet add package Microsoft.AspNetCore.Identity.UI
     dotnet add package Azure.Identity
 
-
-
-
-
-
-
-    Version="7.0.0-rc.1.22426.7"
-
-
-Para habilitar os logs de rastreamento, defina a codegen_tracevariável de ambiente antes de executar dotnet-aspnet-codegenerator:
+# Para habilitar os logs de rastreamento, defina a codegen_tracevariável de ambiente antes de executar dotnet-aspnet-codegenerator:
 
 Prompt de comando:
 SET codegen_trace=1
@@ -79,7 +55,6 @@ dotnet-aspnet-codegenerator
 
 # Gerando controller pelo codegenerator
 dotnet-aspnet-codegenerator controller -name NotesController -async -api -m Note -dc ContextDbReactNetCore --relativeFolderPath Controllers
-
 
 
 # Adcionando Migrations
