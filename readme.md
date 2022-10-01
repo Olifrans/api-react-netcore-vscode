@@ -79,3 +79,11 @@ dotnet-aspnet-codegenerator
 
 # Gerando controller pelo codegenerator
 dotnet-aspnet-codegenerator controller -name NotesController -async -api -m Note -dc ContextDbReactNetCore --relativeFolderPath Controllers
+
+
+
+# Adcionando Migrations
+https://learn.microsoft.com/pt-br/ef/core/cli/dotnet#update-the-tools
+
+dotnet ef migrations add Inicial --context ContextDbReactNetCore
+dotnet ef database update --context ContextDbReactNetCore
